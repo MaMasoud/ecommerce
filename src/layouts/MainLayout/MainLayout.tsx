@@ -1,12 +1,18 @@
 import { Container } from 'react-bootstrap';
 
-import Header from '../../components/common/Header/Header';
+import {Header, Footer} from '@components/common';
 import styles from './styles.module.css';
+import { Outlet } from 'react-router-dom';
+
+
+
 
 export default function MainLayout() {
   return (
     <Container className={styles.container}>
-      <div className={styles.wrapper}><Header /></div>
+      <Header />
+      <div className={styles.wrapper}><Outlet /></div>
+      <Footer />
     </Container>
   )
 }

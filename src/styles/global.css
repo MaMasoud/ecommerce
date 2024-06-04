@@ -1,0 +1,26 @@
+.active {
+    font-weight: bold;
+
+}
+
+.notFound {
+    padding-top: 15%;
+    text-align: center;
+}
+
+.notFound h1 {
+    font-size: 130px;
+}
+
+.notFound p {
+    font-size: 50px;
+}
+.notFound a {
+    font-size: 30px;
+    color: rgb(13, 202, 240);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.notFound a:hover {
+    text-decoration: underline;
+}
