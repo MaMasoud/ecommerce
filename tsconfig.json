@@ -28,6 +28,7 @@
       "@services/*": ["src/services/*"],
       "@store/*": ["src/store/*"],
       "@layouts/*": ["src/layouts/*"],
+      "@api/*": ["src/api/*"],
     },
 
     

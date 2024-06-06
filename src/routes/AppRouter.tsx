@@ -17,7 +17,7 @@ const routes = createBrowserRouter([
             { path: '/login', element: <Login /> },
             { path: '/register', element: <Register /> },
             {
-                path: '/products/:prefix', element: <Products />, loader: ({ params }) => {
+                path: 'categories/products/:prefix', element: <Products />, loader: ({ params }) => {
                     if (typeof params.prefix !== 'string' || !/^[a-z]+$/i.test(params.prefix)) {  // if prefix is not a word
                         throw new Response('Bad Request',
                             {
